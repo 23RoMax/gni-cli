@@ -9,7 +9,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["notes", "to-do", "markdown", "git", "note-cli", "cli"],
+  "keywords": [
+    "notes",
+    "to-do",
+    "markdown",
+    "git",
+    "note-cli",
+    "cli"
+  ],
   "author": "23Ro <max@new-thread.de> (http://23ro.de)",
   "license": "GNU GPLv3",
   "homepage": "https://github.com/23RoMax/gni-cli",
