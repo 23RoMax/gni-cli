@@ -1,5 +1,5 @@
 {
-  "name": "gNodeIt-cli",
+  "name": "gnodeit-cli",
   "version": "1.0.0",
   "description": "A simple way of managing notes via the command line, and automatically syncing them to git.",
   "main": "bin/index.js",
@@ -9,9 +9,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Maximilian Nebl",
+  "keywords": ["notes", "to-do", "markdown", "git", "note-cli", "cli"],
+  "author": "23Ro <max@new-thread.de> (http://23ro.de)",
   "license": "GNU GPLv3",
+  "homepage": "https://github.com/23RoMax/gni-cli",
   "dependencies": {
     "arg": "^4.1.3",
     "dotenv": "^8.2.0",
