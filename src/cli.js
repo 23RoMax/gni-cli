@@ -2,6 +2,7 @@ const promptMissingOption = require('./utils/inquirer')
 const noter = require('./modules/noter/noter')
 const dotenv = require('dotenv')
 const arg = require('arg')
+const path = require('path')
 
 let config = null
 
@@ -24,7 +25,7 @@ function parseArgumentsIntoOptions(rawArgs) {
    }
 
 async function loadConfig () {
-    config = dotenv.config()
+    config = dotenv.config({ path: path.normalize(path.resolve(__dirname, '..')+'/.env') })
     if (config.error) {
         throw console.log('No .env file detected!')
     }
