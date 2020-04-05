@@ -1,0 +1,21 @@
+{
+  "name": "gNodeIt-cli",
+  "version": "1.0.0",
+  "description": "A simple way of managing notes via the command line, and automatically syncing them to git.",
+  "main": "bin/index.js",
+  "bin": {
+    "gni": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Maximilian Nebl",
+  "license": "GNU GPLv3",
+  "dependencies": {
+    "arg": "^4.1.3",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.1.0",
+    "simple-git": "^1.132.0"
+  }
+}
