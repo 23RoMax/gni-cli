@@ -33,7 +33,6 @@ module.exports = async function promptMissingOptions (options) {
     }
 
     const answers = await inquirer.prompt(questions)
-    console.log(answers)
     return {
         ...options,
         template: options.template || answers.template,
