@@ -1,5 +1,7 @@
 # gNodeIt-cli
 
+[![NPM](https://nodei.co/npm/gnodeit-cli.png)](https://nodei.co/npm/gnodeit-cli/)
+
 A simple, reliable, command line interface to create notes, write content in VSCode and automatically syncing them into a configured repository.
 
 ## How to use
@@ -32,8 +34,9 @@ CLIENT_NAME='DeviceName'
 ## To-Do's
 
 - Tests
+- Open and continue editing
 - Configuration via CLI
-- Fetch and pull before creating new ones
+- Fetch and pull before creating new documents ones
 - Initiate new repositories
 - ToDo sync (get To-Do's from Documents and sync them to configured To-Do Apps)
 
