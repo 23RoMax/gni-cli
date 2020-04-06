@@ -36,7 +36,7 @@ CLIENT_NAME='DeviceName'
 - Tests
 - Open and continue editing
 - Configuration via CLI
-- Fetch and pull before creating new documents ones
+- Fetch and pull before creating new documents - DONE
 - Initiate new repositories
 - ToDo sync (get To-Do's from Documents and sync them to configured To-Do Apps)
 
