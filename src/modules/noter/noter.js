@@ -85,6 +85,12 @@ module.exports = async function createNote (options) {
           })*/
     }
 
+    if (process.env.GIT_SYNC === 'true') {
+        console.log('Git Sync is activated. Fetching and pulling missing data.')
+        await github.fetchRepository(basePath)
+        await github.pullRepository(basePath)
+    }
+
     await createNewNote (_filePath, _path, _header)
     await openNote (_filePath, _fileName, _path)
     await watchNote (_filePath, _fileName, _path)
