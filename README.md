@@ -1,6 +1,6 @@
 # gNodeIt-cli
 
-[![NPM](https://nodei.co/npm/gnodeit-cli.png)](https://nodei.co/npm/gnodeit-cli/)
+[![NPM](https://nodei.co/npm/gnodeit-cli.png)](https://nodei.co/npm/gnodeit-cli.png)
 
 A simple, reliable, command line interface to create notes, write content in VSCode and automatically syncing them into a configured repository.
 
