@@ -7,7 +7,6 @@ const github = require('../github/github')
 
 module.exports = async function createNote (options) {
     let date = null
-    var changeCounter = 0
     if (process.env.FOLDERSTRUCTURE === 'fullDate') {
         date = await getDate()
     }
@@ -51,7 +50,6 @@ module.exports = async function createNote (options) {
             execute = 'nano ./notes/' + fileName
             // console.log(execute)
         }
-
         execSync(execute, (error, stdout, stderr) => {
             if (error) {
                 console.log(`error: ${error.message}`)
@@ -90,8 +88,12 @@ module.exports = async function createNote (options) {
         await github.fetchRepository(basePath)
         await github.pullRepository(basePath)
     }
-
-    await createNewNote (_filePath, _path, _header)
-    await openNote (_filePath, _fileName, _path)
-    await watchNote (_filePath, _fileName, _path)
+    if (options === 'open') {
+        let openPath = path.normalize(basePath)
+        await openNote(openPath, openPath, openPath)
+    } else {
+        await createNewNote (_filePath, _path, _header)
+        await openNote (_filePath, _fileName, _path)
+        await watchNote (_filePath, _fileName, _path)
+    }
 }

@@ -32,9 +32,13 @@ async function loadConfig () {
 }
 
 module.exports.cli = async function (args) {
+  await loadConfig()
+  if (args[2] === 'open') {
+    await noter(args[2])
+  } else {
     let options = parseArgumentsIntoOptions(args)
-    await loadConfig()
     options = await promptMissingOption(options)
     await noter(options)
     console.log('Nice Work, a new note a day keeps the doctor away!')
-   }
+  }
+}

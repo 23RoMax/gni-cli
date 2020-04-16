@@ -15,7 +15,11 @@
     "markdown",
     "git",
     "note-cli",
-    "cli"
+    "cli",
+    "gnodeit",
+    "note taking",
+    "productivity",
+    "productivity-cli"
   ],
   "author": "23Ro <max@new-thread.de> (http://23ro.de)",
   "license": "GNU GPLv3",
